@@ -18,7 +18,6 @@ public class DataTypes {
         //Boolean
         boolean isJavaClass = true;
 
-
         int heightt = Integer.parseInt(args[0]);
         float discount = .5f;
 
