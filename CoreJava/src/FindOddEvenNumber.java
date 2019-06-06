@@ -7,7 +7,7 @@ public class FindOddEvenNumber {
         if(value % 2 == 0) {
             System.out.println("It is a Even Number");
         }else {
-            System.out.println("It is a Odd Number");
+            System.out.println("It is a Odd Number..");
         }
     }
 }
