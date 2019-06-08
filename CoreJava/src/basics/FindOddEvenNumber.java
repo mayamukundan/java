@@ -1,8 +1,10 @@
+package basics;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class FindOddEvenNumber {
-    // java FindOddEvenNumber 3
+    // java basics.FindOddEvenNumber 3
 
     public static void main(String[] args) {
         //        int value = Integer.parseInt(args[0]);
