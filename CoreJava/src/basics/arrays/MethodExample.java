@@ -23,4 +23,3 @@ public class MethodExample {
         System.out.println("Age is $$$$***** *"+ age+"******$$$$$");
     }
 }
-

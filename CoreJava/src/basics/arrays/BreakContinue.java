@@ -4,6 +4,7 @@ public class BreakContinue {
     public static void main(String[] args) {
         BreakContinue bc = new BreakContinue();
 
+
         int ages[] = bc.getAges();
 
         for(int index = 0 ; index < ages.length ; index++){
