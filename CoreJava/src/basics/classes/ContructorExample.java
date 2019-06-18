@@ -14,6 +14,10 @@ public class ContructorExample {
 
 //        Employee employee1 = new Employee();
 
+        Employee allThree = new Employee(22,"Peter","Sales");
+        System.out.println("Department = "+ allThree.department);
+        System.out.println("Id = "+ allThree.id);
+
     }
 
     public void printDetails(Employee employee){

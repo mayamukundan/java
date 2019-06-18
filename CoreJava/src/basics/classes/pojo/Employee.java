@@ -10,14 +10,23 @@ public class Employee {
 //    public Employee(){
 //
 //    }
-//
-    public Employee(int idX){
-        id = idX;
+
+    public Employee(int id){
+        this.id = id;
     }
 
     public Employee(int idX, String nameX){
         id = idX;
         name = nameX;
     }
+
+    public Employee(int id, String name, String department){
+        this(id,name);
+        this.department = department;
+    }
+
+    public int add(int a , int b){return 0;}
+    public int add(int a , int b, int c){return 0;}
+
 
 }
