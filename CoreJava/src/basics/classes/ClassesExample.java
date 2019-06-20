@@ -39,7 +39,7 @@ public class ClassesExample {
 
 //        String address = new String("Some Drive");
 //        String address = ("Some Drive");
-
+//        SpecialKitchen kitchen;
     }
 
 

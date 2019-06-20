@@ -6,8 +6,10 @@ public class Pen {
     private String brand;
     public static int count;  // Class Level Variable
     public String instanceVariable;
+    public final String color = "Black";
 
     public Pen(){
+        System.out.println("I am in pen constructor");
         this.count++;
     }
 
@@ -58,5 +60,16 @@ public class Pen {
     @Override
     protected void finalize() throws Throwable {
         System.out.println(this.name +" Is getting Destroyed************************");
+    }
+
+    public static void main(String[] args) {
+        Pen pen = new Pen();
+        System.out.println(pen);
+//        pen.color = "Blue";
+    }
+
+
+    static {
+        System.out.println(" I am in static block...");
     }
 }
