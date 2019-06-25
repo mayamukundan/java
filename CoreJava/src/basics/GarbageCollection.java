@@ -1,6 +1,5 @@
 package basics;
 
-import basics.classes.pojo.Employee;
 import basics.classes.pojo.Pen;
 
 /**

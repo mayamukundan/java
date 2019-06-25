@@ -1,6 +1,6 @@
 package basics.classes;
 
-import basics.classes.pojo.Employee;
+import basics.classes.pojo.employee.Employee;
 
 public class ContructorExample {
     public static void main(String[] args) {
@@ -14,16 +14,16 @@ public class ContructorExample {
 
 //        Employee employee1 = new Employee();
 
-        Employee allThree = new Employee(22,"Peter","Sales");
+        /*Employee allThree = new Employee(22,"Peter","Sales");
         System.out.println("Department = "+ allThree.department);
-        System.out.println("Id = "+ allThree.id);
+        System.out.println("Id = "+ allThree.id);*/
 
     }
 
     public void printDetails(Employee employee){
-        System.out.println("Name ="+employee.name);
+       /* System.out.println("Name ="+employee.name);
         System.out.println("Id ="+employee.id);
-        System.out.println("Address ="+employee.address);
+        System.out.println("Address ="+employee.address);*/
 
     }
 }

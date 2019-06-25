@@ -1,6 +1,5 @@
 package basics.method;
 
-import basics.classes.pojo.Employee;
 import basics.classes.pojo.Pen;
 
 public class SetterGetterMethodExample {
