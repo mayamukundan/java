@@ -1,4 +1,5 @@
 package basics.classes.pojo.employee;
+// This is a IS-A Relationship with H2kEmployee
 
 public class ITEmployee extends H2kEmployee {
 
@@ -30,4 +31,10 @@ public class ITEmployee extends H2kEmployee {
     public void setProgrammingExperience(String programmingExperience) {
         this.programmingExperience = programmingExperience;
     }
+
+    @Override
+    public void tieColor() {
+        System.out.println("The Tie color for IT Employee should be Magenta");
+    }
+
 }

@@ -10,8 +10,8 @@ public class InheritanceExample {
         System.out.println(itEmployee.getProgrammingExperience());
 
 
-        TaxEmployee taxEmployee = new TaxEmployee(555);
-        System.out.println(taxEmployee.getId());
+//        TaxEmployee taxEmployee = new TaxEmployee(555);
+//        System.out.println(taxEmployee.getId());
 
 
 

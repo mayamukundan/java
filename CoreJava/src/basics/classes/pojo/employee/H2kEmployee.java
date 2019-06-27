@@ -58,4 +58,6 @@ public abstract class H2kEmployee extends Object {
     public void watchColor(){
         System.out.println("Watch Color should be BLACK");
     }
+
+    public abstract void tieColor();//must do, but not how it does it
 }

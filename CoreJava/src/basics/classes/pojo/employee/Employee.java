@@ -6,7 +6,7 @@ public class Employee extends Object {
     private int id; // 0
     private String name; //
     private String department;
-    public Address address;
+    public Address address; // Employee HAS-A Address
 //    private String companyName;
 
     public Employee(int id){

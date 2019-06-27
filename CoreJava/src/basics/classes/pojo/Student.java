@@ -1,5 +1,6 @@
 package basics.classes.pojo;
 
+//@Deprecated
 public class Student {
     public String name;
     public int height;

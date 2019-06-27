@@ -39,4 +39,17 @@ public class TaxEmployee extends H2kEmployee {
     public void watchColor(){
         System.out.println("Watch Color should be BLACK & WHITE For Tax Employee");
     }
+
+    @Deprecated
+    public void test(){
+    }
+
+    public void test(String val){
+
+    }
+
+    @Override
+    public void tieColor() {
+        System.out.println("The tie color for tax employee will be PURPLE");
+    }
 }
