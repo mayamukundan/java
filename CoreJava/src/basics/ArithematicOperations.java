@@ -2,6 +2,7 @@ package basics;
 public class ArithematicOperations {
     public static void main(String[] args) {
 
+
 //        System.out.println(3+5 +" Is the Final Answer");
 //        System.out.println("Is the Final Answer : " + 3+5+4+6); // String + Integer + Integer
 
