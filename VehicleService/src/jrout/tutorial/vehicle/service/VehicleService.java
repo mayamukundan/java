@@ -11,7 +11,11 @@ public class VehicleService {
             System.out.println("Clean the Engine...");
         }else if(vehicleType.equalsIgnoreCase("nissan")){
             System.out.println("Clean the Engine...");
-            System.out.println("Check air presssure");
+        }
+
+        String name = null;
+        if (name != null) {
+
         }
     }
 }
