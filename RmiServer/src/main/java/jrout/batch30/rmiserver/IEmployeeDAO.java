@@ -1,5 +1,8 @@
 package jrout.batch30.rmiserver;
 
+import java.util.List;
+
 public interface IEmployeeDAO {
-    public String[][] getEmployeeList();
+    String[][] getEmployeeList();
+    List getNames();
 }
