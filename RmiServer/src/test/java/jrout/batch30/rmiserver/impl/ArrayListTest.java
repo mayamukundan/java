@@ -58,4 +58,44 @@ public class ArrayListTest {
         assertNotNull(names);
     }
 
+    @Test
+    public void testListObjectSort(){
+        ArrayList<Light> lights = new ArrayList<>();
+        lights.add(new Light("Philip","Philips"));
+        lights.add(new Light("DuoPhilip","Philips"));
+        lights.add(new Light("Radar","Apple"));
+        lights.add(new Light("micro","Microsoft"));
+
+        System.out.println(lights);
+        // Find out how to sort a list of object based on their property.
+    }
+}
+class Light{
+    private String name;
+    private String company;
+
+    public Light(String name, String company){
+        this.name = name;
+        this.company = company;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    @Override
+    public String toString() {
+        return "["+this.name +" "+ this.company+"]";
+    }
 }
