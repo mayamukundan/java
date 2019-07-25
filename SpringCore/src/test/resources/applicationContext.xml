@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <bean id="vehicle" class="jrout.batch30.springcore.impl.HondaVehicleImpl"/>-->
+    <bean id="vehicle" class="jrout.batch30.springcore.impl.BMWVehicleImpl" scope="prototype"/>
+    <bean id="vehicle2" class="jrout.batch30.springcore.impl.HondaVehicleImpl" scope="prototype"/>
+
+</beans>
