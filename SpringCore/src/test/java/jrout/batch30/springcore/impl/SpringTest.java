@@ -9,7 +9,8 @@ public class SpringTest {
     @Test
     public void testSpringBean(){
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        IVehicle vehicle = (IVehicle)context.getBean("vehicle");
+//        IVehicle vehicle = (IVehicle)context.getBean("vehicle");
+        IVehicle vehicle = context.getBean("vehicle",IVehicle.class);
         System.out.println(vehicle.hashCode());
 
         vehicle = (IVehicle)context.getBean("vehicle");

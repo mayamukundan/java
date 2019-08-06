@@ -13,7 +13,8 @@
     <bean id="engineProvider" class="jrout.batch30.springcore.impl.EngineProviderImpl"/>
     <bean id="betterEngineProvider" class="jrout.batch30.springcore.impl.BetterEngineProviderImpl"/>
 
-    <bean id="vehicle" class="jrout.batch30.springcore.impl.BMWVehicleImpl"> <!--new BMWVehicleImpl()-->
+<!--    @Component("vehicle")-->
+    <bean id="vehicle" class="jrout.batch30.springcore.impl.BMWVehicleImpl"> <!--BMWVehicleImpl vehicle = new BMWVehicleImpl()-->
         <property name="engineProvider" ref="betterEngineProvider"/>
     </bean>
 

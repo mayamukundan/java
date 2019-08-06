@@ -10,7 +10,9 @@ public class VehicleImplTest {
 
     @Before
     public void setUp(){
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml",
+//                "applicationContext_1.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext_ComponentScan.xml");
         iVehicle = (IVehicle)context.getBean("vehicle");
 //        iVehicle = new HondaVehicleImpl();
 //        iVehicle = new BMWVehicleImpl();
@@ -21,4 +23,10 @@ public class VehicleImplTest {
         iVehicle.vehileName();
         iVehicle.drivingSpeed();
     }
+
+    @Test
+    public void bmwDependencyInjectionTest() throws Exception {
+        iVehicle.drivingSpeed();
+    }
+
 }

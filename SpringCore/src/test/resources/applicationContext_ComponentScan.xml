@@ -8,15 +8,5 @@
                             http://www.springframework.org/schema/beans/spring-beans.xsd
                             http://www.springframework.org/schema/context
                             http://www.springframework.org/schema/context/spring-context.xsd">
-
-<!--    <bean id="vehicle" class="jrout.batch30.springcore.impl.HondaVehicleImpl"/>-->
-    <bean id="engineProvider" class="jrout.batch30.springcore.impl.EngineProviderImpl"/>
-    <bean id="betterEngineProvider" class="jrout.batch30.springcore.impl.BetterEngineProviderImpl"/>
-
-    <bean id="vehicle" class="jrout.batch30.springcore.impl.BMWVehicleImpl"> <!--new BMWVehicleImpl()-->
-        <property name="engineProvider" ref="betterEngineProvider"/>
-    </bean>
-
-    <bean id="vehicle2" class="jrout.batch30.springcore.impl.HondaVehicleImpl"/>
-
+    <context:component-scan base-package="jrout.batch30.springcore.impl"/>
 </beans>
