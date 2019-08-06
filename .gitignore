@@ -1,3 +1,8 @@
 .idea/
 *.iml
 out/
+target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
