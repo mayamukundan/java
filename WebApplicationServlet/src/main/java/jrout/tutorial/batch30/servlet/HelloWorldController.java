@@ -1,5 +1,6 @@
 package jrout.tutorial.batch30.servlet;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,10 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/helloworld")
-public class HelloWorldServlet extends HttpServlet {
+@WebServlet("/helloworldcontroller")
+public class HelloWorldController extends HttpServlet {
 
-    public HelloWorldServlet(){
+    public HelloWorldController() {
         System.out.println("This is my Constructor...");
     }
 
@@ -25,31 +26,16 @@ public class HelloWorldServlet extends HttpServlet {
         System.out.println("This is Destroy Method....");
     }
 
-   /* @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.service(req, resp);
-    }
-    */
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Inside the doGet Method ");
-
-        resp.setContentType("text/html");
-        PrintWriter writer = resp.getWriter();
-        String firstname = req.getParameter("firstname");
-        String lastname = req.getParameter("lastname");
-        String occupation = req.getParameter("occupation");
-        // dbService.getDetails(myname)
-        writer.print("Hello <b>" + firstname + " "+ lastname +"</b> " +
-                "Time is : <h1>"+  new java.util.Date()+"</h1> </br>");
-        writer.print("My Occupation is "+ occupation);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("helloworld.jsp");
+        requestDispatcher.forward(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Inside the doPost Method ");
-       doGet(req,resp);
+        doGet(req, resp);
     }
 
 }

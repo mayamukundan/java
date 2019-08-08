@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html>
 <body>
-    Hello World How are you....
+
+<h2>HTML Forms</h2>
+
+<form action="helloworldcontroller" method="post">
+    First name is :<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br>
+    Password:<br>
+    <input type="password" name="password" value="Mouse">
+    <br><br>
+    -- REST -- JMS -- ReactJS -- Hibernate(JPA)
+    Occupation:<br>
+    <input type="text" name="occupation" value="Software">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/helloworld".</p>
+
 </body>
 </html>
